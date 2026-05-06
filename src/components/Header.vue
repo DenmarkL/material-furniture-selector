@@ -37,7 +37,7 @@
 }
 
 .header-left {
-  display: flex;
+  display: flex;   
   align-items: flex-end;
   gap: 24px;
 }
@@ -76,13 +76,21 @@
 @media (max-width: 900px) {
   .app-header {
     padding: 18px 16px;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;     /* ← KEEP HORIZONTAL */
+    align-items: center;
   }
 
   .header-left {
-    flex-direction: column;
-    gap: 6px;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .tagline {
+    font-size: 8px;
+    letter-spacing: 0.18em;
   }
 }
 </style>
