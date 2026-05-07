@@ -43,7 +43,7 @@
 
       <div class="ai-section-title">Recommended next steps</div>
       <div v-for="(line, i) in aiSummary.next" :key="line">
-        <span class="ai-bullet">— </span><span>{{ i + 1 }}.</span><span>{{ line }}</span>
+        <span class="ai-bullet"></span><span>{{ i + 1 }}.</span><span>{{ line }}</span>
       </div>
 
     </div>
